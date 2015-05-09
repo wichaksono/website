@@ -32,7 +32,7 @@ if (!isset($_COOKIE['VISITOR'])) {
     setcookie('VISITOR',$browser,$duration);
 
     // SQL Command atau perintah SQL INSERT
-    $sql = "INSERT INTO statistik (ip, os, browser) VALUES ('$ip', '$browser', '$os')";
+    $sql = "INSERT INTO statistik (ip, os, browser) VALUES ('$ip', '$os', '$browser')";
 
     // variabel { $db } adalah perwakilan dari koneksi database lihat config.php
     $query = $db->query($sql);
