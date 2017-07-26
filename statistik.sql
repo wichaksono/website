@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `statistik` (
   `ip` varchar(20) NOT NULL,
   `os` varchar(30) NOT NULL,
   `browser` varchar(130) NOT NULL,
-  `date_create` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `date_create` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
