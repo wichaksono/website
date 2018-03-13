@@ -21,7 +21,7 @@ $browser = browser_user();
 $os      = os_user();
 
 // Check bila sebelumnya data pengunjung sudah terrekam
-if (!isset($_COOKIE['VISITOR'])) {
+if (! isset($_COOKIE['VISITOR'])) {
 
     // Masa akan direkam kembali
     // Tujuan untuk menghindari merekam pengunjung yang sama dihari yang sama.
@@ -38,5 +38,5 @@ if (!isset($_COOKIE['VISITOR'])) {
     $query = $db->query($sql);
 }
 
-
+echo "<p>Untuk Melihat Siapa saja yang akses silahkan buka <a href=\"admin.php\"/>Admin.php</a></p>";
 ?>
